@@ -3,7 +3,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
-import { idbPromise } from "../../utils/helpers";
+import { idbPromise } from '../../utils/helpers';
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -24,7 +24,7 @@ function CategoryMenu() {
     } else if (!loading) {
       idbPromise('categories', 'get').then(categories => {
         dispatch({
-          type: UPDATE_CATEGORIES, 
+          type: UPDATE_CATEGORIES,
           categories: categories
         });
       });
