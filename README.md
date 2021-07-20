@@ -1,7 +1,7 @@
 # shop-shop (Redux)
 
 ## Description 
- The task for this assignment was to help create this shop-shop store, and then refactor the cade and adding redux to it. 
+ The task for this assignment was to help create this shop-shop store, and then refactor the code and adding redux to it. 
 
 
 
